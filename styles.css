@@ -34,7 +34,7 @@ header {
 .btn-line {
     width: 25px;
     height: 3px;
-    background-color: #fff;
+    background-color: #825454;
     margin: 3px 0;
 }
 
@@ -48,9 +48,12 @@ header {
 }
 
 .menu-items a {
+    
     text-decoration: none;
     color: #fff;
 }
+
+
 
 @media screen and (max-width: 768px) {
     .menu-btn {
@@ -180,8 +183,13 @@ header {
     padding: 40px 0;
     text-align: center;
     margin-bottom: 0;
+    
 }
 
+.button a{
+    color:#fff;
+    text-decoration: none;
+}
 
 .container-button {
     max-width: 1200px;
@@ -193,7 +201,9 @@ header {
 
 .button {
     padding: 15px 30px;
-    margin: 0 20px;
+    width: 250px;
+    height: 100px;
+    margin: 0 10px;
     background-color: #333;
     color: #fff;
     border: none;
