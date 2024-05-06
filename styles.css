@@ -20,22 +20,10 @@ header {
     max-width: 150px;
   }
 
-.navbar {
+  .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end; /* Alinea el menú a la derecha */
     align-items: center;
-}
-
-.menu-btn {
-    display: none;
-}
-
-
-.btn-line {
-    width: 25px;
-    height: 3px;
-    background-color: #fff;
-    margin: 3px 0;
 }
 
 .menu-items {
@@ -52,35 +40,40 @@ header {
     color: #fff;
 }
 
-@media screen and (max-width: 768px) {
+.menu-btn {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-right: 20px; /* Espacio entre el menú hamburguesa y el resto del navbar */
+}
+
+.btn-line {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
+}
+
+@media screen and (max-width: 1024px) {
     .menu-btn {
         display: flex;
     }
     .menu-items {
         display: none;
         flex-direction: column;
-        width: 100%;
+        width: 70%;
+        max-width: 300px;
+        height: 100vh;
         text-align: center;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        background-color: #333;
+        position: fixed;
+        top: 0px;
+        left: -100%;
+        background-color: #d31414;
         padding: 10px;
+        transition: left 0.3s ease;
     }
     .menu-items.active {
-        display: flex;
-    }
-}
-
-@media screen and (min-width: 769px) {
-    .menu-btn {
-        display: none;
-    }
-    .menu-items {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start; /* Alinea a la izquierda en pantallas más grandes */
-        margin-left: 20px; /* Añade un margen a la izquierda para separar del borde de la pantalla */
+        left: 0;
     }
 }
 
@@ -139,7 +132,7 @@ header {
 .elements{
     text-align: center;
     position: absolute;
-    bottom: 10px;
+    bottom: 2%;
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;
