@@ -1,20 +1,97 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+html {
+    font-size: 1rem;
+    height: 100%;
+}
 
-/* * {
+body {    
     margin: 0;
-    box-sizing: border-box;
-    font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-    font-variation-settings: "wdth" 100;
-} */
+    font-family: Arial, sans-serif;
+    padding: 0;
+}
 
-/* body {
-    position: relative;
-    min-height: 100vh;
-    padding-bottom: 4.5rem;
-} */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; /* Fijar el header en la parte superior */
+    ;
+    width: 100%; /* Ancho completo del header */
+    z-index: 1000; /* Asegura que esté arriba de otros elementos */
+    top: 0;
+}
+
+  .logo img {
+    max-width: 150px;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: flex-end; /* Alinea el menú a la derecha */
+    align-items: center;
+}
+
+.menu-items {
+    list-style-type: none;
+    display: flex;
+}
+
+.menu-items li {
+    margin-right: 20px;
+}
+
+.menu-items a {
+    
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu-btn {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-right: 20px; /* Espacio entre el menú hamburguesa y el resto del navbar */
+}
+
+.btn-line {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .menu-btn {
+        display: flex;
+    }
+    .menu-items {
+        display: none;
+        flex-direction: column;
+        width: 70%;
+        max-width: 300px;
+        height: 100vh;
+        text-align: center;
+        position: fixed;
+        top: 0px;
+        left: -100%;
+        background-color: #d31414;
+        padding: 10px;
+        transition: left 0.3s ease;
+    }
+    .menu-items.active {
+        left: 0;
+    }
+}
+
+.menu-space {
+    border: 3px red solid;
+    height: 50px; 
+}
+
+
+
 
 
 article {
@@ -22,7 +99,7 @@ article {
     border-radius: 5px;
     padding: 1%;
     margin: 1%;
-}
+} 
 
 /* .fa-brands {
     margin: 1%;
@@ -47,6 +124,8 @@ article {
 
 section {
     display: flex;
+    position: relative;
+    top: 80px; 
 }
 
 
@@ -94,4 +173,63 @@ section {
     }
 }
 
-/* Tarea: armar punto de corte para escritorio */ 
+/* Estilos del footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 0; 
+  }
+
+  
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .footer-column {
+    flex-basis: calc(25% - 40px); /* Ajusta según el número de columnas */
+    margin: 20px;
+  }
+  
+  .footer-column h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-column ul li {
+    margin-bottom: 5px;
+  }
+  
+  .footer-column ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .social-icons li {
+    margin: 0 10px;
+  }
+  
+  .social-icons li a {
+    color: #fff;
+    font-size: 1.5rem;
+    text-decoration: none;
+  }
+  
+  /* Estilos para el texto de suscripción */
+  .footer-column p {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+  }
