@@ -1,7 +1,20 @@
+document.addEventListener("DOMContentLoaded", function() {
+    var menuBtn = document.querySelector(".menu-btn");
+    var menuItems = document.querySelector(".menu-items");
+
+    menuBtn.addEventListener("click", function() {
+        this.classList.toggle("active");
+        menuItems.classList.toggle("active");
+    });
+});
+
 function toggleMenu() {
     var menuItems = document.getElementById("menuItems");
     menuItems.classList.toggle("active");
 }
+
+
+
 
 let slideIndex = 1;
 showSlides(slideIndex)
