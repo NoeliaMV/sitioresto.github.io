@@ -3,24 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tipos de Sabores</title>
+    <title>Restaurante</title>
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-    <header>
-        <div class="header-logo">
-            <a href="index.html">
-                <img src="img/Logo.png" alt="logo">
-            </a>
-        </div>
+    <header id="main-header">
+      <div class="logo">
+        <img src="./img/Logo.png" alt="Logo">
+      </div>  
 
       <nav class="navbar" id="navbar">
         <ul class="menu-items" id="menuItems">
             <li><a href="#">Home</a></li>
             <li><a href="#">Sobre nosotros</a></li>
             <li><a href="#">Nuestro menu</a></li>
-            <li><a href="#">Contactonos</a></li>
+            <li><a href="#">Contactanos</a></li>
         </ul>
         <div class="menu-btn" onclick="toggleMenu()">
             <div class="btn-line"></div>
@@ -32,19 +30,19 @@
     </header>
 
     <main>
-        <!-- <section class="carousel"> -->
+        <section class="carousel">
         <div class="container">
             <div class="mySlides">
-                <img src="./img/bar.jpg" alt="imagen1">
+                <img src="./img/mero.jpg" alt="imagen1">
             </div>
             <div class="mySlides">
-                <img src="./img/barbyn.jpg" alt="">
+                <img src="./img/mero2.webp" alt="">
             </div>
             <div class="mySlides">
-                <img src="./img/desdearriba.jpg" alt="">
+                <img src="./img/restaurantfue.jpg" alt="">
             </div>
             <div class="mySlides">
-                <img src="./img/comida1.jpg" alt="">
+                <img src="./img/vinofuera.jpg" alt="">
             </div>
             
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -61,34 +59,51 @@
 
         <section class="buttons-section">
             <div class="container-button">
-                <button  class="button" ><a href="reserva.htm">Reserva</a></button>
-                <button class="button"><a href="carta.html">Mira nuestra carta</a></button>
+                <button class="button">Hace tu reserva</button>
+                <button class="button">Mira nuestra carta</button>
             </div>
         </section>
 
         <section class="story-section">
             <div class="story-text">
-                <h4>DESDE 1999 LO MEJOR DE LA GASTRONOMÍA ITALIANA Y MÁS…</h4>
-                 <p>Con más de 22 años de presencia en Argentina, D’oro Italian Bar sigue siendo fiel al estilo que le dio origen. Productos frescos, calidad y una esmerada atención, manteniendo intacta la esencia a lo largo de su historia y logrando distinguir el verdadero sabor de la cocina italiana. Ubicado en la zona más antigua de la ciudad frente a La manzana de las Luces, un lugar único por su encanto, su historia y su magia, D’oro a través de su identidad y diseño se integra de manera armónica a ese entorno arquitectónico especial y de gran valor cultural.</p>   
+                <h4>Descubre una fusion entre sabores y pasion...</h4>
+                 <p>Bienvenido a un rincón gastronómico único en Buenos Aires, donde la esencia del Mediterráneo se fusiona con la pasión argentina por la buena comida. Descubre un oasis culinario que te transporta a las costas bañadas por el sol y los sabores auténticos de la región mediterránea. Con productos frescos, una atención esmerada y una atmósfera encantadora, cada visita es un viaje sensorial que despierta tus sentidos y te invita a disfrutar de una experiencia gastronómica inolvidable. ¡Ven y déjate llevar por la magia del Mediterráneo en este destino gastronómico único en Buenos Aires!
+
+
+
+                 </p>   
             </div>
-        <!-- </section> -->
+        </section>
+
+        <div class="card-container">
+            <div class="card">
+              <img src="./img/comida3.webp" alt="">
+            </div>
+            <div class="card">
+              <img src="./img/comida5.webp" alt="" class="imagen-central">
+            </div>
+            <div class="card">
+              <img src="./img/comida4.webp" alt="">
+            </div>
+          </div>
+
     </main>
 
     <footer>
         <div class="footer-links">
           <div class="footer-column">
             <h4>CONTACTO</h4>
-            <ul>
-              <li><a href="#">Ubicacion</a></li>
-              <li><a href="#">N° telefono</a></li>
-              <li><a href="#">Mail</a></li>
+            <ul class="contact-icons">
+              <li><a href="#"><i class="fas fa-map-marker-alt"></i><span>Malabia 1805, Palermo, Buenos Aires</span></a></li>
+              <li><a href="#"><i class="fas fa-phone-alt"></i><span>+54 9 11 2345-6789</span></a></li>
+              <li><a href="#"><i class="far fa-envelope"></i><span>info@tipodesabores.com</span></a></li>
             </ul>
           </div>
           <div class="footer-column">
             <h4>HORARIO</h4>
             <ul>
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
+              <p>Martes a domingo: 12:00hs a 24:00hs</p>
+              <p>Lunes cerrado</p>
             </ul>
           </div>
           <div class="footer-column">
@@ -96,12 +111,12 @@
             <ul class="social-icons">
                 <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                 <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
             </ul> 
           </div>
           <div class="footer-column">
             <h4>HACE TU RESERVA</h4>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicin.</p>
+        
           </div>
         </div>
       </footer>
