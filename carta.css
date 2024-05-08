@@ -30,8 +30,9 @@ header {
     
 }
 
-  .logo img {
+  .header-logo img {
     max-width: 150px;
+    border-radius: 4px;
   }
 
   .navbar {
@@ -172,7 +173,7 @@ section {
 
 /* Estilos del footer */
 footer {
-    background-color: #023059;
+    background-color: #365B73;
     color: #DFEBF2;
     text-align: center;
     padding: 0;
@@ -186,7 +187,7 @@ footer {
   
   .footer-column {
     flex-basis: calc(25% - 40px); /* Ajusta según el número de columnas */
-    margin: 20px;
+    margin: 0px;
   }
   
   .footer-column h4 {
