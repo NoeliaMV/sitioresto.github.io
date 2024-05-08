@@ -1,26 +1,33 @@
-html {
-    font-size: 1rem;
+body, html {
     height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 body {    
     margin: 0;
     font-family: Arial, sans-serif;
-    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que el contenedor ocupe al menos el alto de la ventana */
 }
 
 header {
-    background-color: #333;
+    background-color: #365B73;
     color: #fff;
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: fixed; /* Fijar el header en la parte superior */
-    ;
+    top: 0;
+    left: 0;
     width: 100%; /* Ancho completo del header */
     z-index: 1000; /* Asegura que esté arriba de otros elementos */
-    top: 0;
+    
 }
 
   .logo img {
@@ -52,7 +59,7 @@ header {
     display: none;
     flex-direction: column;
     cursor: pointer;
-    margin-right: 20px; /* Espacio entre el menú hamburguesa y el resto del navbar */
+    margin-right: 30px; /* Espacio entre el menú hamburguesa y el resto del navbar */
 }
 
 .btn-line {
@@ -61,6 +68,8 @@ header {
     background-color: #fff;
     margin: 3px 0;
 }
+
+
 
 @media screen and (max-width: 1024px) {
     .menu-btn {
@@ -85,13 +94,10 @@ header {
     }
 }
 
-.menu-space {
-    border: 3px red solid;
-    height: 50px; 
+.main-content{
+    padding-top: 75px;
+    flex: 1;
 }
-
-
-
 
 
 article {
@@ -101,14 +107,6 @@ article {
     margin: 1%;
 } 
 
-/* .fa-brands {
-    margin: 1%;
-    font-size: 4rem;
-    position: fixed;
-    bottom: 5%;
-    right: 2%;
-    z-index: 20;
-} */
 
 /* img {
     width: 15%;
@@ -124,8 +122,7 @@ article {
 
 section {
     display: flex;
-    position: relative;
-    top: 80px; 
+    position: ab;
 }
 
 
@@ -175,13 +172,12 @@ section {
 
 /* Estilos del footer */
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #365B73;
+    color: #DFEBF2;
     text-align: center;
-    padding: 0; 
+    padding: 1px;
   }
 
-  
   .footer-links {
     display: flex;
     flex-wrap: wrap;
@@ -208,10 +204,14 @@ footer {
   }
   
   .footer-column ul li a {
-    color: #fff;
+    color: #DFEBF2;
     text-decoration: none;
   }
   
+  .contact-icons > li > a > i{
+    margin-right: 7px
+  }
+
   .social-icons {
     display: flex;
     justify-content: center;
@@ -223,7 +223,7 @@ footer {
   }
   
   .social-icons li a {
-    color: #fff;
+    color: #DFEBF2;
     font-size: 1.5rem;
     text-decoration: none;
   }
