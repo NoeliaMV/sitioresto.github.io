@@ -172,10 +172,10 @@ section {
 
 /* Estilos del footer */
 footer {
-    background-color: #365B73;
+    background-color: #023059;
     color: #DFEBF2;
     text-align: center;
-    padding: 1px;
+    padding: 0;
   }
 
   .footer-links {
