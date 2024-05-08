@@ -72,7 +72,7 @@ header {
 
 
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 600px) {
     .menu-btn {
         display: flex;
     }
@@ -182,7 +182,8 @@ footer {
   .footer-links {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    flex-grow: 1;
+    justify-content: center;    
   }
   
   .footer-column {
