@@ -97,7 +97,8 @@ header {
     flex-direction: column;
     padding-top: 75px;
     padding-bottom: 30px;
-    flex: 1;    
+    flex: 1;
+    background-color: rgba(54, 91, 115, 0.5);   
 }
 
 
