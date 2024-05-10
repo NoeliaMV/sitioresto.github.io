@@ -111,6 +111,7 @@ header {
 
 img {
     max-width: 95%;
+    border-radius: 4px;
 }
 
 .producto a {
@@ -167,7 +168,7 @@ img {
         flex-wrap: wrap;
     }
     .producto {
-        flex-basis: calc(20% - 1rem);        
+        flex-basis: calc(25% - 1rem);        
     }
 }
 
