@@ -26,6 +26,13 @@ header {
     
 }
 
+.global-nav {
+    position: relative;
+    height: auto;
+    width: auto;
+    display: flex;
+}
+
 .header-logo img {
     max-width: 150px;
     border-radius: 4px;
@@ -98,7 +105,7 @@ header {
     padding-top: 75px;
     padding-bottom: 30px;
     flex: 1;
-    background-color: rgba(54, 91, 115, 0.5);   
+    background-color: rgba(54, 91, 115, 0.5);
 }
 
 
@@ -112,6 +119,14 @@ header {
 img {
     max-width: 95%;
     border-radius: 4px;
+}
+
+img:hover {
+    transform: scale(1.05,1.05); /*Ancho al que quiero llegar*/
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-delay: 0.1s;
+    transition-timing-function: cubic-bezier(.27,1.07,.85,.9);
 }
 
 .producto a {
@@ -137,6 +152,7 @@ img {
         /*calc() hace un cálculo matemático*/
         /*Ocupa el 30% del contenedor - 1 rem para dar espacio entre columnas*/
     }
+
 }
 
 @media only screen and (min-width:769px) {
