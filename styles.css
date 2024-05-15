@@ -5,8 +5,8 @@ body {
 }
 
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: transparent;
+    color: #DFEBF2;
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
@@ -14,28 +14,21 @@ header {
     position: fixed; /* Fijar el header en la parte superior */
     width: 100%; /* Ancho completo del header */
     z-index: 1000; /* Asegura que esté arriba de otros elementos */
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  #main-header.scrolled {
+    background-color: #023059;
   }
 
   .logo img {
     max-width: 150px;
   }
 
-.navbar {
+  .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end; /* Alinea el menú a la derecha */
     align-items: center;
-}
-
-.menu-btn {
-    display: none;
-}
-
-
-.btn-line {
-    width: 25px;
-    height: 3px;
-    background-color: #825454;
-    margin: 3px 0;
 }
 
 .menu-items {
@@ -48,47 +41,50 @@ header {
 }
 
 .menu-items a {
-    
     text-decoration: none;
-    color: #fff;
+    font-weight: bold;
+    color: #F29F05;
 }
 
+.menu-btn {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-right: 20px; /* Espacio entre el menú hamburguesa y el resto del navbar */
+}
 
+.btn-line {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
+}
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     .menu-btn {
         display: flex;
     }
     .menu-items {
         display: none;
         flex-direction: column;
-        width: 100%;
+        width: 70%;
+        max-width: 300px;
+        height: 100vh;
         text-align: center;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        background-color: #333;
+        position: fixed;
+        top: 0px;
+        left: -100%;
+        background-color: #d31414;
         padding: 10px;
+        transition: left 0.3s ease;
     }
     .menu-items.active {
-        display: flex;
-    }
-}
-
-@media screen and (min-width: 769px) {
-    .menu-btn {
-        display: none;
-    }
-    .menu-items {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start; /* Alinea a la izquierda en pantallas más grandes */
-        margin-left: 20px; /* Añade un margen a la izquierda para separar del borde de la pantalla */
+        left: 0;
     }
 }
 
 
-.container {
+.container-carousel {
     width: 100%;
     margin-top: 0;
 }
@@ -121,13 +117,12 @@ header {
     width: auto;
     margin-top: -22px;
     padding: 16px;
-    color: #fff;
+    color: #F29F05;
     font-weight: bold;
     font-size: 18px;
     transition: 0.6 ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
-    border:  solid #fff 2px;
 }
 .next {
     right: 0;
@@ -142,7 +137,7 @@ header {
 .elements{
     text-align: center;
     position: absolute;
-    bottom: 10px;
+    bottom: 35%;
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;
@@ -161,7 +156,7 @@ header {
     border-radius: 2px;
 }
 .active, .quadrate:hover{
-    background-color: #fff;
+    background-color: #F29F05;
 }
 @media screen and (max-width:900px) {
     .container{
@@ -179,17 +174,12 @@ header {
 }
 
 .buttons-section {
-    background-color: rgba(90, 83, 79, 0.808);
+    background-color: #365B73;
     padding: 40px 0;
     text-align: center;
     margin-bottom: 0;
-    
 }
 
-.button a{
-    color:#fff;
-    text-decoration: none;
-}
 
 .container-button {
     max-width: 1200px;
@@ -201,15 +191,14 @@ header {
 
 .button {
     padding: 15px 30px;
-    width: 250px;
-    height: 100px;
-    margin: 0 10px;
-    background-color: #333;
-    color: #fff;
+    margin: 0 20px;
+    background-color: #F29F05;
+    color: #DFEBF2;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 22px;
+    font-weight: bold;
     transition: background-color 0.3s ease;
 }
 
@@ -221,7 +210,7 @@ header {
     text-align: center;
     margin: 0;
     padding: 50px 20px;
-    background-color: rgba(90, 83, 79, 0.507);
+    background-color: rgba(54, 91, 115, 0.5);
 }
 
 .story-text h4 {
@@ -231,6 +220,93 @@ header {
 .story-text {
     max-width: 800px;
     margin: 0 auto;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.6;
 }
+
+.card-container {
+    background-color: rgba(54, 91, 115, 0.5);
+    display: flex;
+    gap: 20px; /* Espacio entre las tarjetas */
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    padding-bottom: 5%;
+  }
+
+  .imagen-central {
+    width: 100%;
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Bordes redondeados para las imágenes */
+    object-fit: cover;
+  }
+
+
+ /* Estilos del footer */
+ footer {
+    background-color: #023059;
+    color: #DFEBF2;
+    text-align: center;
+    padding: 0;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .footer-column {
+    flex-basis: calc(25% - 40px); /* Ajusta según el número de columnas */
+    margin: 20px;
+  }
+  
+  .footer-column h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-column ul li {
+    margin-bottom: 5px;
+  }
+  
+  .footer-column ul li a {
+    color: #DFEBF2;
+    text-decoration: none;
+  }
+  
+  .contact-icons > li > a > i{
+    margin-right: 7px
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .social-icons li {
+    margin: 0 10px;
+  }
+  
+  .social-icons li a {
+    color: #DFEBF2;
+    font-size: 1.5rem;
+    text-decoration: none;
+  }
+  
+  /* Estilos para el texto de suscripción */
+  .footer-column p {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+  }
+  
