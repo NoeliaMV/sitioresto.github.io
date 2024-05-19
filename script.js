@@ -2,10 +2,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const hamburger = document.querySelector('.hamburger');
     const navLinks = document.querySelector('.nav-links');
     const closeBtn = document.querySelector('.close-btn');
-    const homeLink = document.getElementById('home-link');
-    const aboutLink = document.getElementById('about-link');
-    const menuLink = document.getElementById('menu-link');
-    const contactLink = document.getElementById('contact-link');
 
     hamburger.addEventListener('click', () => {
         navLinks.classList.toggle('active');
@@ -20,32 +16,15 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Cerrar el menú cuando se hace clic en un enlace
-    homeLink.addEventListener('click', () => {
-        navLinks.classList.remove('active');
-        hamburger.classList.remove('active');
-        closeBtn.classList.remove('active');
-    });
-
-    aboutLink.addEventListener('click', () => {
-        navLinks.classList.remove('active');
-        hamburger.classList.remove('active');
-        closeBtn.classList.remove('active');
-    });
-
-    menuLink.addEventListener('click', () => {
-        navLinks.classList.remove('active');
-        hamburger.classList.remove('active');
-        closeBtn.classList.remove('active');
-    });
-
-    contactLink.addEventListener('click', () => {
-        navLinks.classList.remove('active');
-        hamburger.classList.remove('active');
-        closeBtn.classList.remove('active');
+    const navLinksList = document.querySelectorAll('.nav-links li a');
+    navLinksList.forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('active');
+            hamburger.classList.remove('active');
+            closeBtn.classList.remove('active');
+        });
     });
 });
-
-
 
 
 window.addEventListener('scroll', function() {

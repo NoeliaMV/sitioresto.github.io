@@ -236,6 +236,11 @@ nav .close-btn {
     box-sizing: border-box;
 }
 
+.button a {
+  text-decoration: none;
+  color: #DFEBF2 ;
+}
+
 .button :hover {
     background-color: #555;
 }
