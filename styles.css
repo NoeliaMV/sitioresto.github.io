@@ -25,61 +25,105 @@ header {
     max-width: 9.375em; /*150px*/
   }
 
-  .navbar {
+  nav {
     display: flex;
-    justify-content: flex-end; /* Alinea el menú a la derecha */
+    justify-content: space-between;
     align-items: center;
+    padding: 10px 20px;
+    position: relative;  
 }
 
-.menu-items {
-    list-style-type: none;
+nav .nav-links {
+    list-style: none;
     display: flex;
+    gap: 20px;
 }
 
-.menu-items li {
-    margin-right: 1.25em; /* 20px*/
+nav .nav-links li {
+    margin: 0;
 }
 
-.menu-items a {
-    text-decoration: none;
-    font-weight: bold;
+nav .nav-links a {
     color: #F29F05;
+    text-decoration: none;
+    font-size: 18px;
 }
 
-.menu-btn {
+nav .hamburger {
     display: none;
     flex-direction: column;
     cursor: pointer;
-    margin-right: 1.25em; /*20px*/ /* Espacio entre el menú hamburguesa y el resto del navbar */
+    gap: 5px;
 }
 
-.btn-line {
-    width: 1.5625em; /* 25px */
-    height: 0.1875em; /* 3px */
-    background-color: #fff;
-    margin: 0.1875em 0;/* 3px 0 */
+nav .hamburger .line {
+    width: 25px;
+    height: 3px;
+    background-color: #F29F05;
 }
 
-@media screen and (max-width: 1024px) {
-    .menu-btn {
-        display: flex;
-        width: 70%;
-        max-width: 18.75em; /* 300px */
-        height: 100vh;
-        text-align: center;
-        position: fixed;
-        top: 0px;
-        left: 80%;
-        padding: 0.625em; /*10px*/
-        transition: left 0.3s ease;
-    }
-    
+nav .close-btn {
+    display: none;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    top: -30px;
+    right: 10px;
+    background-color: transparent;
+}
 
-    .menu-items {
+@media (max-width: 768px) {
+    nav .nav-links {
         display: none;
-    
-    }   
-   
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 200px;
+        background-color: #F29F05;
+        padding: 20px 10px;
+        border-left: 1px solid #444;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+        z-index: 1;
+    }
+
+    nav .nav-links.active {
+        display: flex;
+    }
+
+    nav .nav-links li {
+        margin-bottom: 20px;
+    }
+
+    nav .nav-links a {
+      color: #fff;
+      padding-top: 100%;
+    }
+      
+
+    nav .nav-links li:last-child {
+        margin-bottom: 0;
+    }
+
+    nav .hamburger {
+        display: flex;
+        z-index: 2;
+    }
+
+    nav .hamburger.active {
+        display: none;
+    }
+
+    nav .close-btn {
+        display: none;
+        z-index: 2;
+    }
+
+    nav .close-btn.active {
+        display: block;
+    }
 }
 
 

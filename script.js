@@ -1,17 +1,21 @@
-document.addEventListener("DOMContentLoaded", function() {
-    var menuBtn = document.querySelector(".menu-btn");
-    var menuItems = document.querySelector(".menu-items");
+document.addEventListener('DOMContentLoaded', () => {
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    const closeBtn = document.querySelector('.close-btn');
 
-    menuBtn.addEventListener("click", function() {
-        this.classList.toggle("active");
-        menuItems.classList.toggle("active");
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        hamburger.classList.toggle('active');
+        closeBtn.classList.toggle('active');
+    });
+
+    closeBtn.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        hamburger.classList.toggle('active');
+        closeBtn.classList.toggle('active');
     });
 });
 
-function toggleMenu() {
-    var menuItems = document.getElementById("menuItems");
-    menuItems.classList.toggle("active");
-}
 
 
 window.addEventListener('scroll', function() {
