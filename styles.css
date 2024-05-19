@@ -2,6 +2,7 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     padding: 0;
+    background-color: rgba(54, 91, 115, 0.5);
 }
 
 header {
@@ -73,7 +74,7 @@ nav .close-btn {
     background-color: transparent;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1023px) {
     nav .nav-links {
         display: none;
         flex-direction: column;
@@ -180,7 +181,6 @@ nav .close-btn {
 .elements{
     text-align: center;
     position: absolute;
-  
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;
@@ -201,20 +201,7 @@ nav .close-btn {
 .active, .quadrate:hover{
     background-color: #F29F05;
 }
-@media screen and (max-width:900px) {
-    .container{
-        width: 100%;
-    }
-}
-@media screen and (max-width:500px) {
-    .container{
-        width: 100%;
-    }
-    .prev,
-    .next{
-        padding: 0.3125em; /* 5px */
-    }
-}
+
 
 .buttons-section {
     background-color: #365B73;
@@ -230,6 +217,8 @@ nav .close-btn {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    
 }
 
 .button {
@@ -243,17 +232,30 @@ nav .close-btn {
     font-size: 1.375em;/*22px*/
     font-weight: bold;
     transition: background-color 0.3s ease;
+    width: 23%;
+    box-sizing: border-box;
 }
 
 .button :hover {
     background-color: #555;
 }
 
+@media (max-width: 767px) {
+  .container-button {
+      flex-direction: column; /* Cambia la dirección a columna */
+      align-items: center; /* Centra los elementos en columna */
+  }
+
+  .button {
+      margin: 10px 0; /* Espacio entre los botones en dispositivos móviles */
+      width: 37%;
+  }
+}
+
 .story-section {
     text-align: center;
     margin: 0;
     padding: 3.125em 1.25em; /*50px 20px*/
-    background-color: rgba(54, 91, 115, 0.5);
 }
 
 .story-text h4 {
@@ -268,7 +270,6 @@ nav .close-btn {
 }
 
 .card-container {
-    background-color: rgba(54, 91, 115, 0.5);
     display: flex;
     gap: 1.25em; /* Espacio entre las tarjetas */
     justify-content: space-between;
@@ -287,6 +288,24 @@ nav .close-btn {
     border-radius: 0.5em; /*8px*/ /* Bordes redondeados para las imágenes */
     object-fit: cover;
   }
+
+ 
+ 
+  @media (max-width: 767px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%; 
+        margin-bottom: 20px;
+    }
+
+    .imagen-central {
+        width: 100%;
+    }
+}  
 
 
  /* Estilos del footer */
