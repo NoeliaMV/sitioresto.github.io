@@ -24,7 +24,7 @@ body{
 }
 
 header{
-    background-color:#212524;
+    background-color:#023059;
     color: #fff;
     padding: 10px 20px;
     display: flex;
@@ -150,7 +150,7 @@ header{
 /*Diseño del Footer*/
 /* Estilos del footer */
 footer {
-    background-color: #808E89;
+    background-color:#023059 ;
     color: #DFEBF2;
     text-align: center;
     padding: 0;
@@ -204,7 +204,7 @@ footer {
 /* Primero tamaño de pantalla a partir de 500 px*/
 @media only screen and (min-width:500px){
     header {
-        background-color: #212524;
+        
         display: flex;
         flex-direction: row;
         font-size: medium;
