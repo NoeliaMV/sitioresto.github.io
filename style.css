@@ -81,7 +81,7 @@ header{
 }
 
 .contenedor2{
-    box-shadow: 0 0 20px 0 rgba(41, 179, 128, 0.5);
+    box-shadow: 0 0 20px 0 rgba(22, 25, 206, 0.9);
     font-size: small;
     }
 
@@ -94,7 +94,7 @@ header{
 }
 
 .contacto{
-    background: black;
+    background: #344947;
 }
 
 .formulario form div{
@@ -203,8 +203,7 @@ footer {
 /* Puntos de cortes */
 /* Primero tamaño de pantalla a partir de 500 px*/
 @media only screen and (min-width:500px){
-    header {
-        
+    header {        
         display: flex;
         flex-direction: row;
         font-size: medium;
@@ -264,8 +263,6 @@ footer {
     body{
         padding: 0 ;
         font-size: large;
-        background-color:#373D36;
-        
     }
 
     .contenedor2{
