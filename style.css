@@ -57,6 +57,11 @@ header{
     color: #fff;
 }
 
+.logo img{
+    height:100px;
+    width: 180px;
+    padding-top:0.5em ;
+}
 
 .container{
     max-width: 1180px;
@@ -207,6 +212,10 @@ footer {
         width: 100%;
         height: auto;
     }
+    .logo img{
+        height: 6em;
+        width: 100px;
+        padding-top:0.5em ;
 }
 
 /*+Tamaño de pantalla a partir de 755px como minimo*/
