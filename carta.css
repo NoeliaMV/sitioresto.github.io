@@ -12,7 +12,7 @@ body {
 
 
 header {
-    background-color: #365B73;
+    background-color: #023059;
     color: #fff;
     padding: 10px 20px;
     display: flex;
@@ -95,7 +95,7 @@ header {
 .main-content{
     display: flex;
     flex-direction: column;
-    padding-top: 75px;
+    padding-top: 85px;
     padding-bottom: 30px;
     flex: 1;
     background-color: rgba(54, 91, 115, 0.5);
@@ -132,7 +132,7 @@ img:hover {
     text-transform: uppercase;
 }
 
-@media only screen and (max-width:561px) {
+@media only screen and (max-width:600px) {
     .contenedor {
         display: flex;
         flex-direction: column;
