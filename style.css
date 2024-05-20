@@ -16,7 +16,7 @@ header,footer{
 }
 
 body{
-    background-color:#373D36;
+    background-color:rgba(54,91,115,0.5);
     color:#fff;
     padding: 0 1.5%;
     margin:0;
@@ -76,8 +76,8 @@ header{
     font-size: 2.5em;
 }
 
-.titulo span{
-    color: #29B380;
+.titulo {
+    color: #303545;
 }
 
 .contenedor2{
@@ -107,13 +107,13 @@ header{
     padding: 0.6em;
     border: none;
     background: none;
-    border-bottom: 3px solid #29B380;
+    border-bottom: 3px solid #255791;
     outline: none;
     color:azure
 }
 
 .formulario form button {
-    background: #29B380;
+    background: #255791;
     border: 0;
     padding: 0.9em;
 }
@@ -131,7 +131,7 @@ header{
 .formulario form .boton :hover,
 .formulario form .boton:focus{
 
-    background-color:#4F7ECE ;
+    background-color: #34CC69;
     color: black;
     transition: background-color 2s;
     outline: 0;
