@@ -18,19 +18,19 @@ header {
     transition: background-color 0.3s ease-in-out;
   }
 
-  #main-header.scrolled {
+#main-header.scrolled {
     background-color: #023059;
     nav .nav-links a {
       color: #F29F05;
     }
     
-  }
+}
 
-  .logo img {
+.logo img {
     max-width: 9.375em; /*150px*/
-  }
+}
 
-  nav {
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -79,7 +79,7 @@ nav .close-btn {
     background-color: transparent;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 796px) {
     nav .nav-links {
         display: none;
         flex-direction: column;
@@ -105,7 +105,7 @@ nav .close-btn {
 
     nav .nav-links a {
       color: #fff;
-      padding-top: 100%;
+      /* padding-top: 100%; */
     }
       
 
