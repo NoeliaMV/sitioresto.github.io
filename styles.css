@@ -20,10 +20,7 @@ header {
 
 #main-header.scrolled {
     background-color: #023059;
-    nav .nav-links a {
-      color: #F29F05;
-    }
-    
+  
 }
 
 .logo img {
@@ -49,7 +46,7 @@ nav .nav-links li {
 }
 
 nav .nav-links a {
-    color: #023059;
+    color: #F29F05;
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
@@ -130,6 +127,8 @@ nav .close-btn {
     nav .close-btn.active {
         display: block;
     }
+
+    
 }
 
 
