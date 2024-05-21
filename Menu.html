@@ -17,18 +17,19 @@
         </a>
     </div>
 
-    <nav class="navbar" id="navbar">
-    <ul class="menu-items" id="menuItems">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Sobre nosotros</a></li>
-        <li><a href="#">Nuestro Menú</a></li>
-        <li><a href="#">Contactonos</a></li>
-    </ul>
-    <div class="menu-btn" onclick="toggleMenu()">
-        <div class="btn-line"></div>
-        <div class="btn-line"></div>
-        <div class="btn-line"></div>
+    <nav>
+      <ul class="nav-links">
+        <li><a aria-current="page home" href="index.html">Home</a></li>
+        <li><a aria-current="page sobre nosotros" href="#">Sobre nosotros</a></li>
+        <li><a aria-current="Nuestro Menu" href="Menu.html">Nuestro Menú</a></li>
+        <li><a aria-current="page contacto" href="#">Contactonos</a></li>
+      </ul>
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
     </div>
+    <button class="close-btn">&times;</button>
     </nav>
   </header>
   
@@ -113,10 +114,8 @@
         </div>
         <div class="footer-column">
           <h4>HORARIO</h4>
-          <ul>
             <p>Martes a domingo: 12:00hs a 24:00hs</p>
             <p>Lunes cerrado</p>
-          </ul>
         </div>
         <div class="footer-column">
           <h4>SEGUINOS</h4>
@@ -126,9 +125,10 @@
               <li><a href="#"><i class="fab fa-twitter"></i></a></li>
           </ul> 
         </div>
-        <div class="footer-column">
-          <h4>HACE TU RESERVA</h4>
       
+      
+        </div>
+        
         </div>
       </div>
     </footer>
