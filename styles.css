@@ -88,7 +88,7 @@ nav .close-btn {
         background-color: #F29F05;
         padding: 20px 10px;
         border-left: 1px solid #444;
-        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+        box-shadow: 0 0 0 100vmax rgba(0,0,0,.5);
         z-index: 1;
     }
 
