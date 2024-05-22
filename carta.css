@@ -250,7 +250,33 @@ img:hover {
     }
 }
 
+/*stilo seccion about*/
 
+.about{  
+    margin: 2rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.about p{
+    width: 100%;
+   padding-top: 2rem ;
+}
+
+.title {
+
+ padding: 2rem;
+
+}
+
+.about h1{
+    width: 250px;
+    margin: auto;
+
+}
+
+
+/*final seccion about*/
 
 /* Estilos del footer */
 footer {
