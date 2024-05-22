@@ -55,6 +55,11 @@ nav .nav-links a {
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
+    transition: color 0.3s
+}
+
+a:hover {
+    color: #efc77c !important; 
 }
 
 nav .hamburger {
@@ -150,69 +155,11 @@ nav .close-btn {
     nav .close-btn.active {
         display: block;
     }
-}
 
-
-.navbar {
-    display: flex;
-    justify-content: flex-end; /* Alinea el menú a la derecha */
-    align-items: center;
-}
-
-.menu-items {
-    list-style-type: none;
-    display: flex;
-}
-
-.menu-items li {
-    margin-right: 20px;
-}
-
-.menu-items a {
-    
-    text-decoration: none;
-    color: #fff;
-}
-
-.menu-btn {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-    margin-right: 30px; /* Espacio entre el menú hamburguesa y el resto del navbar */
-}
-
-.btn-line {
-    width: 25px;
-    height: 3px;
-    background-color: #fff;
-    margin: 3px 0;
-}
-
-
-
-@media screen and (max-width: 600px) {
-    .menu-btn {
-        display: flex;
-    }
-    .menu-items {
-        display: none;
-        flex-direction: column;
-        width: 70%;
-        max-width: 300px;
-        height: 100vh;
-        text-align: center;
-        position: fixed;
-        top: 0px;
-        left: -100%;
-        background-color: #d31414;
-        padding: 10px;
-        transition: left 0.3s ease;
-    }
-    .menu-items.active {
-        left: 0;
+    a:hover {
+        color: #023059 !important; 
     }
 }
-
 
 .main-content{
     display: flex;
@@ -222,8 +169,6 @@ nav .close-btn {
     flex: 1;
     background-color: rgba(54, 91, 115, 0.5);
 }
-
-
 
 .contenedor {
     max-width: 1441px;
