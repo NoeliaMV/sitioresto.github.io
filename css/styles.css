@@ -135,6 +135,7 @@ nav .close-btn {
 .container-carousel {
     width: 100%;
     margin-top: 0;
+    position: relative;
 }
 
 *{
@@ -157,13 +158,13 @@ nav .close-btn {
     position: absolute;
     top: 0;
 }
-.prev,
-.next{
+ .prev,
+ .next{
     cursor: pointer;
     position: absolute;
     top: 50%;
     width: auto;
-    margin-top: -1.375em; /*-22px*/
+   /*  margin-top: -1.375em; */
     padding: 1em;
     color: #F29F05;
     font-weight: bold;
@@ -171,6 +172,8 @@ nav .close-btn {
     transition: 0.6 ease;
     border-radius: 0 0.1875em 0.1875em 0;/* 0 3px 3px 0 */
     user-select: none;
+    transform: translateY(-50%);
+    z-index: 1;
 }
 .next {
     right: 0;
