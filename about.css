@@ -1,0 +1,15 @@
+
+.about{
+    padding: 2rem;
+}
+
+.about-container{
+    display:grid;
+    grid-template-columns: repeat(auto-fill,minmax(30rem, 1fr));
+}
+
+.img-container{
+margin: auto;
+}
+
+
