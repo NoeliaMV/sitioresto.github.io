@@ -20,10 +20,7 @@ header {
 
 #main-header.scrolled {
     background-color: #023059;
-    nav .nav-links a {
-      color: #F29F05;
-    }
-    
+  
 }
 
 .logo img {
@@ -49,7 +46,7 @@ nav .nav-links li {
 }
 
 nav .nav-links a {
-    color: #023059;
+    color: #F29F05;
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
@@ -91,7 +88,7 @@ nav .close-btn {
         background-color: #F29F05;
         padding: 20px 10px;
         border-left: 1px solid #444;
-        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+        box-shadow: 0 0 0 100vmax rgba(0,0,0,.5);
         z-index: 1;
     }
 
@@ -105,7 +102,7 @@ nav .close-btn {
 
     nav .nav-links a {
       color: #fff;
-      /* padding-top: 100%; */
+      
     }
       
 
@@ -130,12 +127,15 @@ nav .close-btn {
     nav .close-btn.active {
         display: block;
     }
+
+    
 }
 
 
 .container-carousel {
     width: 100%;
     margin-top: 0;
+    position: relative;
 }
 
 *{
@@ -158,13 +158,13 @@ nav .close-btn {
     position: absolute;
     top: 0;
 }
-.prev,
-.next{
+ .prev,
+ .next{
     cursor: pointer;
     position: absolute;
     top: 50%;
     width: auto;
-    margin-top: -1.375em; /*-22px*/
+   /*  margin-top: -1.375em; */
     padding: 1em;
     color: #F29F05;
     font-weight: bold;
@@ -172,6 +172,8 @@ nav .close-btn {
     transition: 0.6 ease;
     border-radius: 0 0.1875em 0.1875em 0;/* 0 3px 3px 0 */
     user-select: none;
+    transform: translateY(-50%);
+    z-index: 1;
 }
 .next {
     right: 0;
