@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sobre nosotros</title>
-    <!-- <link rel="stylesheet" href="../styles.css"> -->
+   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="./css/carta.css">
+    <link rel="stylesheet" href="/css/carta.css">
+    <link rel="stylesheet" href="/css/about.css">
     <link rel="icon" type="image/png" sizes="16x16"  href="/favicons/favicon-16x16.png">    
 </head>
 <body>
@@ -19,10 +20,10 @@
 
     <nav>
       <ul class="nav-links">
-        <li><a aria-current="page" href="index.html">Home</a></li>
-        <li><a aria-current="page" href="about.html">Sobre nosotros</a></li>
-        <li><a aria-current="page" href="Menu.html">Nuestro Menú</a></li>
-        <li><a aria-current="page" href="comentario.html">Contactonos</a></li>
+        <li><a aria-current="page home" href="index.html">Home</a></li>
+        <li><a aria-current="page sobre nosotros" href="about.html">Sobre nosotros</a></li>
+        <li><a aria-current="Nuestro Menu" href="Menu.html">Nuestro Menú</a></li>
+        <li><a aria-current="page contacto" href="#">Contactonos</a></li>
       </ul>
       <div class="hamburger">
         <div class="line"></div>
@@ -34,11 +35,13 @@
   </header>
   
   <main class="main-content">
-
     <div class="about">
-
-        <div class=" title">
-             <h1>Nuestra historia</h1>
+      <div class="about-container">
+          <div class="img-container">
+             <img src="img/historia.jpeg" alt="" style="width:500px;">
+          </div>
+           <div class="element">
+             <h1 class="titulo">Nuestra historia</h1>
             <p>
                 Somos un acogedor restaurante que nació como un sueño en una
                 modesta cafetería en el año 2000 y que se ha construido 
@@ -46,18 +49,24 @@
                 ubicación para brindar una oferta de platos típicos, así como 
                 también diferentes opciones para satisfacer sus antojos. Estamos 
                 ubicados en pleno corazón de Palermo, contamos con un espacio finamente decorado
-                con estilo moderno, donde podrá apreciar calidad y el toque diferente de
-                sus platos preparados con selectos ingredientes, asimismo podrá degustar
+                con estilo moderno.
+            </p>
+           </div>
+
+           <div class="element">
+              <h1 class="titulo">Ofrecemos</h1>
+              <p>
+                La  mejor calidad y el toque diferente de
+                nuestros platos preparados con selectos ingredientes, asimismo podrá degustar
                 la suculenta cocina típica, pastas, y pescados de la mejor calidad.
                 Tipos de sabores Restaurante, es una fiesta en el paladar, un juego para las pupilas,
                 es un punto de reunión de negocios y de complicidad.
-            </p>
-
-        </div>
-
-        <img src="img/about.jpg" alt="" style="width:500px;">
+           </div>
+           <div class="img-container">
+            <img src="img/imgabout.jpeg" alt="" style="width:500px;">
+          </div>
+      </div>
     </div>
-   
   </main>
   
     <footer>
@@ -84,10 +93,14 @@
           </ul> 
         </div>
       
+      
+        </div>
+        
+        </div>
       </div>
     </footer>
   
-  <script src="./js/script.js"></script>
+  <script src="script.js"></script>
   
 </body>
 </html>    
