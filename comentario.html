@@ -6,7 +6,7 @@
     <title> Formulario de sugerencias</title>
 
     <!-- Enlace para CSS-->
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/style-form.css">
 
     <!-- libreria para animaciones-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -22,18 +22,19 @@
             <img src="/imagenes/tipos-de-Sabores-removebg-preview.png" alt="Logo">
         </div>  
 
-        <nav class="navbar" id="navbar">
-            <ul class="menu-items" id="menuItems">
+        <nav>
+            <ul class="nav-links">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Sobre nosotros</a></li>
                 <li><a href="#">Nuestro menu</a></li>
                 <li><a href="#">Contactanos</a></li>
             </ul>
-            <div class="menu-btn" onclick="toggleMenu()">
-                <div class="btn-line"></div>
-                <div class="btn-line"></div>
-                <div class="btn-line"></div>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
             </div>
+            <div class="close-btn">&times;</div>
         </nav>
     </header>
 
@@ -112,5 +113,6 @@
 
     </footer>
     <script src="/validacion.js"> </script>
+    <script src="/burger.js"> </script>
 </body>
 </html>
