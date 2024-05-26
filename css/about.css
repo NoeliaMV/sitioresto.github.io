@@ -1,11 +1,13 @@
 
 .about{
-    padding: 2rem;
+    margin: 2rem;
 }
 
 .about-container{
     display:grid;
-    grid-template-columns: repeat(auto-fill,minmax(30rem, 1fr));
+    /* grid-template-columns: repeat(auto-fill,minmax(30rem, 1fr)); */
+    repeat(3, 1fr);
+    grid-template-rows: min-content;
     gap:1rem
 }
 
