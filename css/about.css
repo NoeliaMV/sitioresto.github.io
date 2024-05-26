@@ -3,6 +3,12 @@
     margin: 2rem;
 }
 
+.about-container {
+  max-width: 1441px;
+  width: 95%;
+  margin: 0 auto;
+}
+
 .about-container{
     display:grid;
     /* grid-template-columns: repeat(auto-fill,minmax(30rem, 1fr)); */
@@ -14,6 +20,18 @@
 .img-container{
 margin: auto;
 }
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 530px) {
+    .about-container {
+      grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr)); 
+      gap: 0.5rem; 
+    }
+    .img-container {
+      margin: 0; 
+    }
+}
+
 
 .about-container p{
     color: rgb(54, 53, 54);
