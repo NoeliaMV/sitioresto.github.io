@@ -3,6 +3,12 @@
     margin: 2rem;
 }
 
+.about-container {
+  max-width: 1441px;
+  width: 95%;
+  margin: 0 auto;
+}
+
 .about-container{
     display:grid;
     grid-template-columns: repeat(auto-fill,minmax(30rem, 1fr));
@@ -22,7 +28,7 @@ margin: auto;
     .img-container {
       margin: 0; 
     }
-  }
+}
 
 
 .about-container p{
