@@ -6,7 +6,7 @@
     <title> Formulario de sugerencias</title>
 
     <!-- Enlace para CSS-->
-    <link rel="stylesheet" href="/style-form.css">
+    <link rel="stylesheet" href="/style.css">
 
     <!-- libreria para animaciones-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -22,19 +22,18 @@
             <img src="/imagenes/tipos-de-Sabores-removebg-preview.png" alt="Logo">
         </div>  
 
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Sobre nosotros</a></li>
-                <li><a href="#">Nuestro menu</a></li>
-                <li><a href="#">Contactanos</a></li>
+        <nav class="navbar" id="navbar">
+            <ul class="menu-items" id="menuItems">
+                <li><a aria-current="page" href="index.html">Home</a></li>
+                <li><a aria-current="page" href="about.html">Sobre nosotros</a></li>
+                <li><a aria-current="page" href="Menu.html">Nuestro Menú</a></li>
+                <li><a aria-current="page" href="comentario.html">Comentario</a></li>
             </ul>
-            <div class="hamburger">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
+            <div class="menu-btn" onclick="toggleMenu()">
+                <div class="btn-line"></div>
+                <div class="btn-line"></div>
+                <div class="btn-line"></div>
             </div>
-            <div class="close-btn">&times;</div>
         </nav>
     </header>
 
@@ -53,11 +52,6 @@
                         <input type="text" id="apellido" placeholder="ingrese su apellido">
                     </div>
 
-                    <div class="Telefono"> 
-                        <label for="telefono">Telefono</label>
-                        <input type="tel" id="telefono" placeholder="ej: +54 1 11 1111 1111">
-                    </div>
-
                     <div class="correo">
                         <label for="email">Correo Electronico</label>
                         <input type="text" id="email"  placeholder="Ingrese su email">
@@ -67,6 +61,23 @@
                         <label for="comentario"> Comentario</label>
                         <textarea name="comentario" id="caja"  rows="3" placeholder="Ingrese su comentario aqui..."></textarea>
                     </div>
+                    <!-- AQui lo hace dinamico por que el menu varia con nuestra base de datos OJO-->
+                    <div class="Platillos">
+                        <label for="puntaje">Platillo</label>
+                        <br>
+                        <select name="" id="list">
+                            <option selected disabled> Selecciona un platillo </option>
+                            <option value=""> platillo 1</option>
+                            <option value=""> platillo 2</option>
+
+                        </select>
+                    </div>
+                    
+                    <div class="clasificacion">
+                        <label for="puntaje">Puntaje (del 0 al 5)</label>
+                        <input type="number" id="puntaje"  min="0" max="5">
+                    </div>
+
 
                     <div class="boton">
                         <p id="respForm"></p>
@@ -113,6 +124,6 @@
 
     </footer>
     <script src="/validacion.js"> </script>
-    <script src="/burger.js"> </script>
+    <script src="./js/menuham.js"> </script>
 </body>
 </html>
