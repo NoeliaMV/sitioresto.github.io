@@ -19,7 +19,7 @@ async function cargarDatos(url) {
     let lista = document.createElement('ul');
     for (d of datos) {
         let item = document.createElement('li');
-        let texto = `${d.apellido}, ${d.nombre} - ${d.fecha_nac}`;
+        let texto = `${d.nombre}, ${d.descripcion} - ${d.precio}`;
         item.innerHTML = texto;
         lista.appendChild(item);
     }
