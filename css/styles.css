@@ -232,7 +232,7 @@ nav .close-btn {
     padding: 0.9375em 1.875em; /* 15px 30px*/
     margin: 0 1.25em; /*0 20px*/
     background-color: #F29F05;
-    color: #101111;
+    color: #0c0d0d;
     border: none;
     border-radius: 0.3125em;/*5px*/
     cursor: pointer;
@@ -245,7 +245,7 @@ nav .close-btn {
 
 .button a {
   text-decoration: none;
-  color: #DFEBF2 ;
+  color: #171818 ;
 }
 
 .button :hover {
